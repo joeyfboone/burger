@@ -6,6 +6,14 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'Grenada1',
+  database : 'burgersDB'
+});
+
 app.use(methodOverride('X-HTTP-Method-Override'))
 
 app.use(bodyParser.urlencoded({ extended: true }));

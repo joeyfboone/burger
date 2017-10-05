@@ -1,3 +1,13 @@
-<p>
-    This is where my index will popluate.
-</p>
+<ul>
+  {{#each burgers}}
+  	<li>
+    <p>{{this.burger_name}}</p>
+  	</li>
+  {{/each}}
+</ul>
+
+
+<form action="/create" method="post">
+    Burger name: <input type="text" name="burger_name">
+    <input type="submit" value="Submit">
+</form>
