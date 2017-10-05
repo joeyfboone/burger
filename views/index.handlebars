@@ -1,13 +1,30 @@
+<div>
 <ul>
   {{#each burgers}}
+  {{#unless devoured}}
   	<li>
-    <p>{{this.burger_name}}</p>
-  	</li>
+    <p>{{burger_name}}</p>
+    <form action="/devour/{{id}}" method="post">
+    <button type="submit">Devour</button>
+    </form>
+{{/unless}}
   {{/each}}
 </ul>
-
+<div>
 
 <form action="/create" method="post">
     Burger name: <input type="text" name="burger_name">
     <input type="submit" value="Submit">
 </form>
+
+<div>
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+  	<li>
+    <p>{{burger_name}}</p>
+    
+{{/if}}
+  {{/each}}
+</ul>
+<div>
