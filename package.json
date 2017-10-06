@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a node JS app that uses handlebars as a templating engine and stores data in a SQL database.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,5 +24,6 @@
     "handlebars": "^4.0.10",
     "method-override": "^2.3.10",
     "mysql": "^2.14.1"
-  }
+  },
+  "devDependencies": {}
 }
