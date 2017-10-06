@@ -1,7 +1,7 @@
 const express = require("express");
 const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
-var dbpassword = require("./keys.js");
+//var dbpassword = require("./keys.js");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
